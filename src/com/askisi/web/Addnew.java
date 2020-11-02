@@ -89,6 +89,7 @@ public class Addnew extends HttpServlet {
 	
 	
 	
+	
 	private static void createNewDatabase(String dburl) {  
         try {  
             Connection conn = DriverManager.getConnection(dburl);  
