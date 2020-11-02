@@ -80,11 +80,11 @@ public class Addnew extends HttpServlet {
 		String sql = "INSERT INTO products(barcode,name,color,desc) VALUES(?,?,?,?)";  
 		PreparedStatement pstmt = conn.prepareStatement(sql);  
 		pstmt.setString(1, barcode);  
-        pstmt.setString(2, name);
-        pstmt.setString(3, color);  
-        pstmt.setString(4, description);
-        pstmt.executeUpdate();
-        conn.close();
+		pstmt.setString(2, name);
+		pstmt.setString(3, color);  
+		pstmt.setString(4, description);
+		pstmt.executeUpdate();
+		conn.close();
 	}
 	
 	
